@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body onload="initClock()">
+
+    <!-- Todo List App -->
+    <section>
+        <div class="wrapper">
+            <div class="task-input">
+                <img src="bars-icon.png" alt="icon">
+                <input type="text" placeholder="Mau ngapain hari ini?">
+            </div>
+            <div class="controls">
+                <div class="filters">
+                    <span id="semua" class="active">Semua</span>
+                    <span id="pending">Pending</span>
+                    <span id="selesai">Selesai</span>
+                </div>
+                <button class="clear-btn">Hapus Semua</button>
+            </div>
+            <ul class="task-box"></ul>
+        </div>
+    </section>
+    <!-- Todo List App -->
+
+
+    <!-- Jam -->
+    <section class="clock">
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="daynum">00</span>
+                <span id="month">Month</span>,
+                <span id="year">Year</span>
+            </div>
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+            </div>
+        </div>
+    </section>
+    <!-- Jam -->
+
+    <script src="todo.js"></script>
+    <script src="clock.js"></script>
+</body>
+</html>
